@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Sep 10 12:20:43 2023
+# Process ID: 13608
+# Current directory: C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.runs/impl_1
+# Command line: vivado.exe -log arithmetic_unit_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arithmetic_unit_top.tcl -notrace
+# Log file: C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.runs/impl_1/arithmetic_unit_top.vdi
+# Journal file: C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.runs/impl_1\vivado.jou
+# Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
+#-----------------------------------------------------------
+source arithmetic_unit_top.tcl -notrace

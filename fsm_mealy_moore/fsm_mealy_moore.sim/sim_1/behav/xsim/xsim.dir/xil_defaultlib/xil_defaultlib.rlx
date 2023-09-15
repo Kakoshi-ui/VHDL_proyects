@@ -1,0 +1,10 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sim_1/imports/new/mealy_moore_fsm_tb.vhd,1693250645,vhdl,,,,mealy_moore_fsm_tb,,,,,,,,
+C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sim_1/new/preescaler_1Hz_tb.vhd,1693428703,vhdl,,,,preescaler_1hz_tb,,,,,,,,
+C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sources_1/imports/new/fsm_mealy.vhd,1693250645,vhdl,C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sources_1/imports/new/top_mealy_moore_fsm.vhd,,,fsm_mealy,,,,,,,,
+C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sources_1/imports/new/fsm_moore.vhd,1693250645,vhdl,C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sources_1/imports/new/top_mealy_moore_fsm.vhd,,,fsm_moore,,,,,,,,
+C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sources_1/imports/new/top_mealy_moore_fsm.vhd,1693250645,vhdl,,,,top_mealy_moore_fsm,,,,,,,,
+C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sources_1/new/preescaler_1Hz.vhd,1693429163,vhdl,C:/Digital_Sys_Design/fsm_mealy_moore/fsm_mealy_moore.srcs/sim_1/new/preescaler_1Hz_tb.vhd,,,preescaler_1hz,,,,,,,,

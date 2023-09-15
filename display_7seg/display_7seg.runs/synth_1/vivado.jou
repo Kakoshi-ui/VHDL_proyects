@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Sep  6 13:58:43 2023
+# Process ID: 2172
+# Current directory: C:/Digital_Sys_Design/display_7seg/display_7seg.runs/synth_1
+# Command line: vivado.exe -log X7segb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source X7segb.tcl
+# Log file: C:/Digital_Sys_Design/display_7seg/display_7seg.runs/synth_1/X7segb.vds
+# Journal file: C:/Digital_Sys_Design/display_7seg/display_7seg.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
+#-----------------------------------------------------------
+source X7segb.tcl -notrace

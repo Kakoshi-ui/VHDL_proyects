@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/clockdiv_tb.vhd,1694584780,vhdl,,,,clockdiv_tb,,,,,,,,
+C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/clockpulse_tb.vhd,1694587021,vhdl,,,,clockpulse_tb,,,,,,,,
+C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/clockdiv.vhd,1694584866,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/clockdiv_tb.vhd,,,clockdiv,,,,,,,,
+C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/clockpulse.vhd,1694586953,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/clockpulse_tb.vhd,,,clockpulse,,,,,,,,

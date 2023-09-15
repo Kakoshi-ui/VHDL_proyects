@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "clockdiv_tb_behav" "xil_defaultlib.clockdiv_tb" -log "elaborate.log" 

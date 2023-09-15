@@ -1,0 +1,7 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.sim/sim_1/synth/func/xsim/comparator_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.srcs/sim_1/new/comparator_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comparator_tb'
+ERROR: [VRFC 10-1471] type error near s ; current type std_logic_vector; expected type std_logic [C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.srcs/sim_1/new/comparator_tb.vhd:35]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.srcs/sim_1/new/comparator_tb.vhd:29]
+INFO: [VRFC 10-8704] VHDL file 'C:/Digital_Sys_Design/arithmetic_unit/arithmetic_unit.srcs/sim_1/new/comparator_tb.vhd' is ignored due to errors

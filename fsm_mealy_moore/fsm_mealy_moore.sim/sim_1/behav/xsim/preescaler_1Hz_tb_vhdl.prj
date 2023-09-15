@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fsm_mealy_moore.srcs/sources_1/new/preescaler_1Hz.vhd" \
+"../../../../fsm_mealy_moore.srcs/sim_1/new/preescaler_1Hz_tb.vhd" \
+
+# Do not sort compile order
+nosort

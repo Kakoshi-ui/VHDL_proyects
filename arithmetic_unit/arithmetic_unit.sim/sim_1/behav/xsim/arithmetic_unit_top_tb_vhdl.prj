@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../arithmetic_unit.srcs/sources_1/new/substractor.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/adder.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/comparator.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/arithmetic_unit_top.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/mux1.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/mux2.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/bcd_unit.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/bcd_desc.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/bcd_lett.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/mux3.vhd" \
+"../../../../arithmetic_unit.srcs/sources_1/new/mux_7seg.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/substractor_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/comparator_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/adder_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/arithmetic_unit_top_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/mux1_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/mux2_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/bcd_unit_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/bcd_desc_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/bcd_lett_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/mux3_tb.vhd" \
+"../../../../arithmetic_unit.srcs/sim_1/new/mux_7seg_tb.vhd" \
+
+# Do not sort compile order
+nosort
