@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../pass_control.srcs/sources_1/new/clockpulse.vhd" \
-"../../../../pass_control.srcs/sim_1/new/clockpulse_tb.vhd" \
-
-# Do not sort compile order
-nosort

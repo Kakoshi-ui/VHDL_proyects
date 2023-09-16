@@ -31,23 +31,31 @@ stimulus: process
     
     clr <= '0';
     inp <= "000";
-    wait for 5 ms;
+    wait for 50 ms;
     
     clr <= '0';
     inp <= "001";
-    wait for 5 ms;
+    wait for 50 ms;
+    inp <= "000";
+    wait for 50 ms;
     
     clr <= '0';
     inp <= "010";
-    wait for 5 ms;
+    wait for 50 ms;
+    inp <= "000";
+    wait for 50 ms;
     
     clr <= '0';
     inp <= "100";
-    wait for 5 ms;
+    wait for 50 ms;
+    inp <= "000";
+    wait for 50 ms;
     
     clr <= '1';
     inp <= "100";
-    wait for 5 ms;
+    wait for 50 ms;
+    inp <= "000";
+    wait for 50 ms;
 end process stimulus;
 
 end Behavioral;

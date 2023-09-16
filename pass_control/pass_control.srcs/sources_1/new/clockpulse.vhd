@@ -11,16 +11,22 @@ end clockpulse;
 
 architecture Behavioral of clockpulse is
 signal inpp : std_logic;
+signal delay1, delay2, delay3 : std_logic;
 
 begin
     inpp <= inp(2) or inp(1) or inp(0);
 
-clock_pulse: process(cclk,clr)
+process(cclk,clr)
     begin
     if(clr = '1') then
-        outp <= '0';
-    elsif (inpp = '1') then
-        outp <= cclk;
+        delay1 <= '0';
+        delay2 <= '0';
+        delay3 <= '0';
+    elsif (rising_edge(cclk)) then
+        delay1 <= inpp;
+        delay2 <= delay1;
+        delay3 <= delay2;
+        outp <= delay1 and delay2 and (not delay3);
     end if;
-end process clock_pulse;
+end process;
 end Behavioral;

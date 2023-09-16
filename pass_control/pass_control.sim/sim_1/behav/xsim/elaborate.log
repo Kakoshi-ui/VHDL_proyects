@@ -1,6 +1,6 @@
 Vivado Simulator v2022.1
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clockpulse_tb_behav xil_defaultlib.clockpulse_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot pass_control_top_tb_behav xil_defaultlib.pass_control_top_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -12,6 +12,9 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.clockdiv [clockdiv_default]
 Compiling architecture behavioral of entity xil_defaultlib.clockpulse [clockpulse_default]
-Compiling architecture behavioral of entity xil_defaultlib.clockpulse_tb
-Built simulation snapshot clockpulse_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.doorlock [doorlock_default]
+Compiling architecture behavioral of entity xil_defaultlib.pass_control_top [pass_control_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.pass_control_top_tb
+Built simulation snapshot pass_control_top_tb_behav

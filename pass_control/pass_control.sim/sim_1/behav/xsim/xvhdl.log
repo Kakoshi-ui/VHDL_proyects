@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/clockpulse_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clockpulse_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/pass_control_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pass_control_top_tb'
