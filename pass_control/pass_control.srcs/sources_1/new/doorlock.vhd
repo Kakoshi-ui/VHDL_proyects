@@ -23,29 +23,22 @@ begin
     digit1 <= code_control(3) & code_control(2);                     
     digit0 <= code_control(1) & code_control(0);
 --Arreglo para las entradas de los botones
-button_in: process(clk,input)
-    begin
-    if (rising_edge(clk) and (input = "001")) then
-        input_fix <= "00";
-    elsif (rising_edge(clk) and (input = "010")) then
-        input_fix <= "01";
-    elsif (rising_edge(clk) and (input = "100")) then
-        input_fix <= "10";
-    else
-        input_fix <= "11";
-    end if;
-end process button_in;
+with input select
+    input_fix <=    "00" when "001",
+                    "01" when "010",
+                    "10" when "100",
+                    "11" when others;
 --Registro de estados
 state_register: process(clk,clr)
     begin
     if (clr = '1') then
         present_state <= q0;
-    elsif (falling_edge(clk)) then
+    elsif (rising_edge(clk)) then
         present_state <= next_state;
     end if;
 end process state_register;
 -- Proceso Combinacional de estados
-C1: process(present_state,input_fix,clk)
+C1: process(present_state,input_fix)
     begin
     case (present_state) is
         when q0 =>

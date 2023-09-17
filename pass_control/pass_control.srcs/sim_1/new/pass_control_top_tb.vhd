@@ -147,5 +147,38 @@ stimulus: process
     wait for 50 ms;
     IN_BTNS <= "100";
     wait for 50 ms;
+    
+    
+    --huecos de espera contraseña incorrecta:
+    CLR <= '1';
+    IN_BTNS <= "000";
+    wait for 50 ms;
+    
+    CLR <= '0';
+    IN_BTNS <= "000";
+    wait for 50 ms;
+    IN_BTNS <= "100";
+    wait for 50 ms;
+    
+    IN_BTNS <= "000";
+    wait for 100 ms;
+    
+    IN_BTNS <= "000";
+    wait for 50 ms;
+    IN_BTNS <= "100";
+    wait for 50 ms;
+    
+    IN_BTNS <= "000";
+    wait for 200 ms;
+    
+    IN_BTNS <= "000";
+    wait for 50 ms;
+    IN_BTNS <= "001";
+    wait for 50 ms;
+    
+    IN_BTNS <= "000";
+    wait for 100 ms;
+    IN_BTNS <= "001";
+    wait for 50 ms;
 end process stimulus;
 end Behavioral;
