@@ -8,5 +8,5 @@ C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/doorlock_tb.vhd,1
 C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/pass_control_top_tb.vhd,1694909138,vhdl,,,,pass_control_top_tb,,,,,,,,
 C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/clockdiv.vhd,1694584866,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/pass_control_top.vhd,,,clockdiv,,,,,,,,
 C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/clockpulse.vhd,1694896171,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/pass_control_top.vhd,,,clockpulse,,,,,,,,
-C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/doorlock.vhd,1694968889,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/pass_control_top.vhd,,,doorlock,,,,,,,,
+C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/doorlock.vhd,1694986387,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/pass_control_top.vhd,,,doorlock,,,,,,,,
 C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/pass_control_top.vhd,1694896561,vhdl,C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/pass_control_top_tb.vhd,,,pass_control_top,,,,,,,,

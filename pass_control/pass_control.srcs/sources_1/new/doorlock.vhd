@@ -14,7 +14,7 @@ architecture Behavioral of doorlock is
 type state_type is (q0, q1, q2, q3, q4, q5, q6, q7, q8);
 signal present_state, next_state : state_type;
 signal input_fix: std_logic_vector (1 downto 0);
-signal digit0, digit1, digit2, digit3 : std_logic_vector (1 downto 0);
+signal digit3, digit2, digit1, digit0 : std_logic_vector (1 downto 0);
 
 begin
 --Programacion del código de la cerradura   
@@ -33,12 +33,12 @@ state_register: process(clk,clr)
     begin
     if (clr = '1') then
         present_state <= q0;
-    elsif (rising_edge(clk)) then
+    elsif rising_edge(clk) then
         present_state <= next_state;
     end if;
 end process state_register;
 -- Proceso Combinacional de estados
-C1: process(present_state,input_fix)
+C1: process(present_state,input_fix,digit3,digit2,digit1,digit0)
     begin
     case (present_state) is
         when q0 =>
@@ -74,34 +74,34 @@ C1: process(present_state,input_fix)
                 next_state <= q8;
             end if;
         when q4 => 
-            if (input_fix = ("00" or "01" or "10")) then
-                next_state <= q0;
-            else
+            if (input_fix = "11") then
                 next_state <= q4;
+            else
+                next_state <= q0;
             end if;
         when q5 => 
-            if (input_fix = ("00" or "01" or "10")) then
-                next_state <= q6;
-            elsif (input_fix = "11") then
+            if (input_fix = "11") then
                 next_state <= q5;
+            else
+                next_state <= q6;
             end if;
         when q6 =>
-            if (input_fix = ("00" or "01" or "10")) then
-                next_state <= q7;
-            elsif (input_fix = "11") then
+            if (input_fix = "11") then
                 next_state <= q6;
+            else
+                next_state <= q7;
             end if;
         when q7 => 
-            if (input_fix = ("00" or "01" or "10")) then
-                next_state <= q8;
-            elsif (input_fix = "11") then
+            if (input_fix = "11") then
                 next_state <= q7;
+            else
+                next_state <= q8;
             end if;
         when q8 => 
-            if (input_fix = ("00" or "01" or "10")) then
-                next_state <= q0;
-            elsif (input_fix = "11") then
+            if (input_fix = "11") then
                 next_state <= q8;
+            else 
+                next_state <= q0;
             end if;
         when others => 
             null;
