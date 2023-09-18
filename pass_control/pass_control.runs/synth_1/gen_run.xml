@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1694986750" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/pass_control_top.dcp">
   <File Type="PA-TCL" Name="pass_control_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="pass_control_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="pass_control_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="pass_control_top.vds"/>
   <File Type="RDS-UTIL" Name="pass_control_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="pass_control_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="pass_control_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="pass_control_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="pass_control_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/doorlock.vhd">
@@ -67,9 +64,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

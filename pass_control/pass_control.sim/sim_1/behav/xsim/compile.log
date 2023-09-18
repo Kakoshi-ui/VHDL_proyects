@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/doorlock.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'doorlock'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/pass_control/pass_control.srcs/sources_1/new/pass_control_top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'pass_control_top'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital_Sys_Design/pass_control/pass_control.srcs/sim_1/new/pass_control_top_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'pass_control_top_tb'
