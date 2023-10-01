@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Sep 30 18:58:22 2023
+# Process ID: 30160
+# Current directory: C:/Digital_Sys_Design/GCD_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23760 C:\Digital_Sys_Design\GCD_system\GCD_system.xpr
+# Log file: C:/Digital_Sys_Design/GCD_system/vivado.log
+# Journal file: C:/Digital_Sys_Design/GCD_system\vivado.jou
+# Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Digital_Sys_Design/GCD_system/GCD_system.xpr

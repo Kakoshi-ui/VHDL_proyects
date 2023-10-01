@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Oct  1 11:48:01 2023
+# Process ID: 24464
+# Current directory: C:/Digital_Sys_Design/GCD_system/GCD_system.runs/synth_1
+# Command line: vivado.exe -log GCD_system_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GCD_system_top.tcl
+# Log file: C:/Digital_Sys_Design/GCD_system/GCD_system.runs/synth_1/GCD_system_top.vds
+# Journal file: C:/Digital_Sys_Design/GCD_system/GCD_system.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
+#-----------------------------------------------------------
+source GCD_system_top.tcl -notrace

@@ -3,8 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity debounce4 is
-    port(   cclk,clr : std_logic;
-            inp : in std_logic;
+    port(   cclk,clr,inp : in std_logic;
             outp : out std_logic);
 end debounce4;
 
@@ -21,6 +20,7 @@ process(cclk,clr)
     elsif rising_edge(cclk) then
         delay1 <= inp;
         delay2 <= delay1;
+        delay3 <= delay2;
     end if;
 end process;
 outp <= delay1 and delay2 and delay3;

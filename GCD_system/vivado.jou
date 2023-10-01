@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Sep 30 18:59:23 2023
+# Process ID: 29816
+# Current directory: C:/Digital_Sys_Design/GCD_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30528 C:\Digital_Sys_Design\GCD_system\GCD_system.xpr
+# Log file: C:/Digital_Sys_Design/GCD_system/vivado.log
+# Journal file: C:/Digital_Sys_Design/GCD_system\vivado.jou
+# Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Digital_Sys_Design/GCD_system/GCD_system.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source debounce4_tb.tcl
+run 500 ms
+relaunch_sim
+run 500 ms
+relaunch_sim
+run 500 ms
+relaunch_sim
+run 500 ms
+run 500 ms
+relaunch_sim
+run 500 ms
+relaunch_sim
+run 500 ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top clock_pulse [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Digital_Sys_Design/GCD_system/GCD_system.srcs/sim_1/new/clock_pulse_tb.vhd w ]
+add_files -fileset sim_1 C:/Digital_Sys_Design/GCD_system/GCD_system.srcs/sim_1/new/clock_pulse_tb.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top clock_pulse_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source clock_pulse_tb.tcl
+run 500 ms
+relaunch_sim
+run 500 ms
+relaunch_sim
+relaunch_sim
+close_sim

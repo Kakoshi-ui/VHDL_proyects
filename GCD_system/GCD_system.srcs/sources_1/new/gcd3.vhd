@@ -8,7 +8,7 @@ entity gcd3 is
             xin : in std_logic_vector (3 downto 0);
             yin : in std_logic_vector (3 downto 0);
             done : out std_logic;
-            gcd : out std_logic_vector (3 downto 0));
+            gcd : out std_logic_vector (15 downto 0));
 end gcd3;
 
 architecture Behavioral of gcd3 is
@@ -31,7 +31,7 @@ begin
                 calc := '1';
             elsif (calc = '1') then
                 if (x = y) then
-                    gcd <= x;
+                    gcd <= X"000"&x;
                     donev := '1';
                     calc := '0';
                 elsif (x < y ) then

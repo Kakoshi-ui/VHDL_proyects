@@ -11,19 +11,21 @@ end clockdiv;
 
 architecture Behavioral of clockdiv is
 signal counter1 : std_logic_vector (17 downto 0);
-signal counter2 : std_logic_vector (2 downto 0);
-signal tmp_sign1 : std_logic;
-signal tmp_sign2 : std_logic;
+signal counter2 : std_logic_vector (1 downto 0);
+signal tmp_sign1 : std_logic := '1';
+signal tmp_sign2 : std_logic := '1'; 
 
 begin
 clk_190: process(clk,clr)
     begin
     if (clr = '1') then
         counter1 <= (others => '0');
+        clk190 <= '0';
     elsif (clk'event and clk = '1') then
         counter1 <= counter1 + 1;
         if (counter1(17) = '1') then
             tmp_sign1 <= not tmp_sign1;
+            clk190 <= tmp_sign1;
             counter1 <= (others => '0'); 
         end if;
     end if;
@@ -33,10 +35,12 @@ clk_25: process(clk,clr)
     begin
     if (clr = '1') then
         counter2 <= (others => '0');
+        clk25 <= '0';
     elsif (clk'event and clk = '1') then
         counter2 <= counter2 + 1;
-        if (counter2(2) = '1') then
+        if (counter2 = "10") then
             tmp_sign2 <= not tmp_sign2;
+            clk25 <= tmp_sign2;
             counter2 <= (others => '0');
         end if;
     end if;

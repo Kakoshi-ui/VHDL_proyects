@@ -3,8 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity clock_pulse is
-    port(   inp,cclk,clr: in std_logic;
-            outp: out std_logic);
+    port(   inp,cclk,clr : in std_logic;
+            outp : out std_logic);
 end clock_pulse;
 
 architecture Behavioral of clock_pulse is
