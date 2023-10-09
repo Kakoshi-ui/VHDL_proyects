@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Oct  7 18:16:42 2023
+# Process ID: 26352
+# Current directory: C:/Digital_Sys_Design/factorial_algorithm/factorial_algorithm.runs/synth_1
+# Command line: vivado.exe -log factorial_algorithm_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source factorial_algorithm_top.tcl
+# Log file: C:/Digital_Sys_Design/factorial_algorithm/factorial_algorithm.runs/synth_1/factorial_algorithm_top.vds
+# Journal file: C:/Digital_Sys_Design/factorial_algorithm/factorial_algorithm.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
+#-----------------------------------------------------------
+source factorial_algorithm_top.tcl -notrace

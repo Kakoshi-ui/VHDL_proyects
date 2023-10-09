@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/X7segb.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/clock_div.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/clock_pulse.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/comparator.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/control_unit.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/mux1.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/mux2.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/x_reg.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/res_reg.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/substractor.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/multiplier.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/out_reg.vhd" \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/factorial_algorithm_top.vhd" \
+"../../../../factorial_algorithm.srcs/sim_1/imports/fact_sim/factorial_algorithm_top_tb.vhd" \
+
+# Do not sort compile order
+nosort
