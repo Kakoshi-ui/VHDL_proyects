@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696182478" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/GCD_system_top.dcp">
   <File Type="PA-TCL" Name="GCD_system_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="GCD_system_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="GCD_system_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="GCD_system_top.vds"/>
   <File Type="RDS-UTIL" Name="GCD_system_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="GCD_system_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="GCD_system_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="GCD_system_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="GCD_system_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/gcd3.vhd">

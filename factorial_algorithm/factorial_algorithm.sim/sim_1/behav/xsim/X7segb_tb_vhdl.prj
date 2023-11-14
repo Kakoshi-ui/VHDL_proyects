@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../factorial_algorithm.srcs/sources_1/imports/fact_algo/X7segb.vhd" \
+"../../../../factorial_algorithm.srcs/sim_1/new/X7segb_tb.vhd" \
+
+# Do not sort compile order
+nosort

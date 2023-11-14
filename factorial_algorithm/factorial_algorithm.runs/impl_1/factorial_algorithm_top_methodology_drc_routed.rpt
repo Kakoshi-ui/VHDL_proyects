@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sat Oct  7 18:18:59 2023
+| Date         : Mon Nov 13 17:35:21 2023
 | Host         : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file factorial_algorithm_top_methodology_drc_routed.rpt -pb factorial_algorithm_top_methodology_drc_routed.pb -rpx factorial_algorithm_top_methodology_drc_routed.rpx
 | Design       : factorial_algorithm_top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 159
+             Violations found: 144
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 144        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 125        |
 | LUTAR-1   | Warning          | LUT drives async reset alert   | 6          |
-| TIMING-20 | Warning          | Non-clocked latch              | 8          |
+| TIMING-20 | Warning          | Non-clocked latch              | 12         |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -37,801 +37,722 @@ Table of Contents
 -----------------
 TIMING-17#1 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/clk190_reg/C is not reached by a timing clock
+The clock pin U1/clk25_reg_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/clk25_reg/C is not reached by a timing clock
+The clock pin U1/clk25_reg_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[0]/C is not reached by a timing clock
+The clock pin U1/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[10]/C is not reached by a timing clock
+The clock pin U1/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[11]/C is not reached by a timing clock
+The clock pin U1/tmp_clk_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[12]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[13]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[14]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[15]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[16]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[17]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[1]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[2]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[3]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[4]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[5]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[6]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[7]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[8]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter1_reg[9]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter_reg[0]/C is not reached by a timing clock
+The clock pin U10/out_data_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/counter_reg[1]/C is not reached by a timing clock
+The clock pin U11/FSM_onehot_present_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/tmp_clk1_reg/C is not reached by a timing clock
+The clock pin U11/FSM_onehot_present_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Critical Warning
 Non-clocked sequential cell  
-The clock pin U1/tmp_clk_reg/C is not reached by a timing clock
+The clock pin U11/FSM_onehot_present_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[0]/C is not reached by a timing clock
+The clock pin U11/FSM_onehot_present_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[10]/C is not reached by a timing clock
+The clock pin U11/FSM_onehot_present_state_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[11]/C is not reached by a timing clock
+The clock pin U11/FSM_onehot_present_state_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[12]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[13]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[14]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[15]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[1]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[2]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[3]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[4]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[5]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#37 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[6]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#38 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[7]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#39 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[8]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#40 Critical Warning
 Non-clocked sequential cell  
-The clock pin U10/out_data_reg[9]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Critical Warning
 Non-clocked sequential cell  
-The clock pin U11/FSM_sequential_present_state_reg[0]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Critical Warning
 Non-clocked sequential cell  
-The clock pin U11/FSM_sequential_present_state_reg[1]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Critical Warning
 Non-clocked sequential cell  
-The clock pin U11/FSM_sequential_present_state_reg[2]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[0]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[10]/C is not reached by a timing clock
+The clock pin U12/count_1_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#46 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[11]/C is not reached by a timing clock
+The clock pin U12/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#47 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[12]/C is not reached by a timing clock
+The clock pin U12/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#48 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[13]/C is not reached by a timing clock
+The clock pin U4/out_data_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#49 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[14]/C is not reached by a timing clock
+The clock pin U4/out_data_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#50 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[15]/C is not reached by a timing clock
+The clock pin U4/out_data_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#51 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[16]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#52 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[17]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#53 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[1]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[2]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[3]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[4]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[5]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[6]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#59 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[7]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#60 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[8]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#61 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_1_reg[9]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#62 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_reg[0]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Critical Warning
 Non-clocked sequential cell  
-The clock pin U12/count_reg[1]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Critical Warning
 Non-clocked sequential cell  
-The clock pin U4/out_data_reg[0]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
-The clock pin U4/out_data_reg[1]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin U4/out_data_reg[2]/C is not reached by a timing clock
+The clock pin U5/out_data_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[0]/C is not reached by a timing clock
+The clock pin U6/delay1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[10]/C is not reached by a timing clock
+The clock pin U6/delay2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[11]/C is not reached by a timing clock
+The clock pin U6/delay3_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[12]/C is not reached by a timing clock
+The clock pin U6/delay7_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[13]/C is not reached by a timing clock
+The clock pin U6/delay8_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#72 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[14]/C is not reached by a timing clock
+The clock pin U6/delay9_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#73 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[15]/C is not reached by a timing clock
+The clock pin U9/multiplication.calc_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#74 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[1]/C is not reached by a timing clock
+The clock pin U9/multiplication.donev_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#75 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[2]/C is not reached by a timing clock
+The clock pin U9/producto_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#76 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[3]/C is not reached by a timing clock
+The clock pin U9/producto_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[4]/C is not reached by a timing clock
+The clock pin U9/producto_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[5]/C is not reached by a timing clock
+The clock pin U9/producto_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#79 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[6]/C is not reached by a timing clock
+The clock pin U9/producto_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[7]/C is not reached by a timing clock
+The clock pin U9/producto_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[8]/C is not reached by a timing clock
+The clock pin U9/producto_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Critical Warning
 Non-clocked sequential cell  
-The clock pin U5/out_data_reg[9]/C is not reached by a timing clock
+The clock pin U9/producto_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay1_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay2_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay3_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay4_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay5_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay6_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay7_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay8_reg/C is not reached by a timing clock
+The clock pin U9/producto_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin U6/delay9_reg/C is not reached by a timing clock
+The clock pin U9/res_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/multiplication.calc_reg/C is not reached by a timing clock
+The clock pin U9/res_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/multiplication.donev_reg/C is not reached by a timing clock
+The clock pin U9/res_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[0]/C is not reached by a timing clock
+The clock pin U9/res_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[10]/C is not reached by a timing clock
+The clock pin U9/res_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[11]/C is not reached by a timing clock
+The clock pin U9/res_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[12]/C is not reached by a timing clock
+The clock pin U9/res_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[13]/C is not reached by a timing clock
+The clock pin U9/res_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#99 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[14]/C is not reached by a timing clock
+The clock pin U9/res_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#100 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[15]/C is not reached by a timing clock
+The clock pin U9/res_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#101 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[1]/C is not reached by a timing clock
+The clock pin U9/res_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#102 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[2]/C is not reached by a timing clock
+The clock pin U9/res_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#103 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[3]/C is not reached by a timing clock
+The clock pin U9/res_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#104 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[4]/C is not reached by a timing clock
+The clock pin U9/res_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[5]/C is not reached by a timing clock
+The clock pin U9/res_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[6]/C is not reached by a timing clock
+The clock pin U9/res_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[7]/C is not reached by a timing clock
+The clock pin U9/x_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[8]/C is not reached by a timing clock
+The clock pin U9/x_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/producto_reg[9]/C is not reached by a timing clock
+The clock pin U9/x_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#110 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[0]/C is not reached by a timing clock
+The clock pin U9/x_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#111 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[10]/C is not reached by a timing clock
+The clock pin U9/x_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[11]/C is not reached by a timing clock
+The clock pin U9/x_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[12]/C is not reached by a timing clock
+The clock pin U9/x_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[13]/C is not reached by a timing clock
+The clock pin U9/x_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[14]/C is not reached by a timing clock
+The clock pin U9/x_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[15]/C is not reached by a timing clock
+The clock pin U9/x_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[1]/C is not reached by a timing clock
+The clock pin U9/x_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[2]/C is not reached by a timing clock
+The clock pin U9/x_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[3]/C is not reached by a timing clock
+The clock pin U9/x_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[4]/C is not reached by a timing clock
+The clock pin U9/x_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[5]/C is not reached by a timing clock
+The clock pin U9/x_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[6]/C is not reached by a timing clock
+The clock pin U9/x_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[7]/C is not reached by a timing clock
+The clock pin U9/y_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Critical Warning
 Non-clocked sequential cell  
-The clock pin U9/res_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#125 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/res_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#126 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#127 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[10]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#128 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[11]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#129 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[12]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#130 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[13]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#131 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[14]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#132 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[15]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#133 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#134 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#135 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#136 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#137 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#138 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#139 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#140 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#141 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/x_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#142 Critical Warning
-Non-clocked sequential cell  
-The clock pin U9/y_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#143 Critical Warning
-Non-clocked sequential cell  
 The clock pin U9/y_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#144 Critical Warning
+TIMING-17#125 Critical Warning
 Non-clocked sequential cell  
 The clock pin U9/y_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell U11/go_mult_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/go_mult_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell U1/clk25_reg_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) U1/clk25_reg_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell U11/go_mult_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/go_mult_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell U1/clk25_reg_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U1/clk25_reg_C/CLR, U1/clk25_reg_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell U11/ld_x_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/ld_x_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell U11/go_mult_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/go_mult_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell U11/x_sel_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/clr_mult_reg/CLR, U11/x_sel_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell U11/ld_out_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/ld_out_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#5 Warning
 LUT drives async reset alert  
-LUT cell U11/x_sel_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/x_sel_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell U11/x_sel_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/clr_mult_reg/CLR, U11/x_sel_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell U6/y[2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U9/x_reg[13]/CLR, U9/x_reg[14]/CLR, U9/x_reg[15]/CLR, U9/x_reg[1]/CLR,
-U9/x_reg[2]/CLR, U9/x_reg[3]/CLR, U9/x_reg[4]/CLR, U9/x_reg[5]/CLR,
-U9/x_reg[6]/CLR, U9/x_reg[7]/CLR, U9/x_reg[8]/CLR, U9/x_reg[9]/CLR,
-U9/y_reg[0]/CLR, U9/y_reg[1]/CLR, U9/y_reg[2]/CLR
- (the first 15 of 37 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell U11/x_sel_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U11/x_sel_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch U11/FSM_sequential_next_state_reg[0] cannot be properly analyzed as its control pin U11/FSM_sequential_next_state_reg[0]/G is not reached by a timing clock
+The latch U1/clk25_reg_LDC cannot be properly analyzed as its control pin U1/clk25_reg_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch U11/FSM_sequential_next_state_reg[1] cannot be properly analyzed as its control pin U11/FSM_sequential_next_state_reg[1]/G is not reached by a timing clock
+The latch U11/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin U11/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch U11/FSM_sequential_next_state_reg[2] cannot be properly analyzed as its control pin U11/FSM_sequential_next_state_reg[2]/G is not reached by a timing clock
+The latch U11/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin U11/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch U11/clr_mult_reg cannot be properly analyzed as its control pin U11/clr_mult_reg/G is not reached by a timing clock
+The latch U11/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin U11/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch U11/go_mult_reg/L7 (in U11/go_mult_reg macro) cannot be properly analyzed as its control pin U11/go_mult_reg/L7/G is not reached by a timing clock
+The latch U11/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin U11/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch U11/ld_out_reg cannot be properly analyzed as its control pin U11/ld_out_reg/G is not reached by a timing clock
+The latch U11/FSM_onehot_next_state_reg[4] cannot be properly analyzed as its control pin U11/FSM_onehot_next_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch U11/ld_x_reg cannot be properly analyzed as its control pin U11/ld_x_reg/G is not reached by a timing clock
+The latch U11/FSM_onehot_next_state_reg[5] cannot be properly analyzed as its control pin U11/FSM_onehot_next_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
+Non-clocked latch  
+The latch U11/clr_mult_reg cannot be properly analyzed as its control pin U11/clr_mult_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch U11/go_mult_reg cannot be properly analyzed as its control pin U11/go_mult_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch U11/ld_out_reg cannot be properly analyzed as its control pin U11/ld_out_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch U11/ld_x_reg cannot be properly analyzed as its control pin U11/ld_x_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
 Non-clocked latch  
 The latch U11/x_sel_reg/L7 (in U11/x_sel_reg macro) cannot be properly analyzed as its control pin U11/x_sel_reg/L7/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 8 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 12 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sat Oct  7 18:18:36 2023
+| Date         : Mon Nov 13 17:34:59 2023
 | Host         : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file factorial_algorithm_top_control_sets_placed.rpt
 | Design       : factorial_algorithm_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    17 |
-|    Minimum number of control sets                        |    17 |
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    72 |
+| Unused register locations in slices containing registers |    87 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    17 |
-| >= 0 to < 4        |     7 |
-| >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     0 |
+| Total control sets |    19 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     7 |
+| >= 16              |     6 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              27 |           11 |
-| No           | No                    | Yes                    |              39 |           12 |
-| No           | Yes                   | No                     |               3 |            3 |
+| No           | No                    | No                     |              26 |            9 |
+| No           | No                    | Yes                    |              23 |           12 |
+| No           | Yes                   | No                     |               5 |            5 |
 | Yes          | No                    | No                     |              16 |            3 |
-| Yes          | No                    | Yes                    |              67 |           13 |
+| Yes          | No                    | Yes                    |              67 |           16 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,26 +70,28 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------------------------+----------------------------------------------+--------------------------+------------------+----------------+--------------+
-|                  Clock Signal                 |                 Enable Signal                |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------------------------------------+----------------------------------------------+--------------------------+------------------+----------------+--------------+
-|  U11/go_mult_reg/G0                           |                                              |                          |                1 |              1 |         1.00 |
-|  U11/x_sel_reg/G0                             |                                              |                          |                1 |              1 |         1.00 |
-|  U11/x_sel_reg_i_1_n_0                        |                                              | U11/ld_out_reg_i_1_n_0   |                1 |              1 |         1.00 |
-|  U11/clr_mult_reg_i_2_n_0                     |                                              | U11/x_sel_reg_i_2_n_0    |                1 |              1 |         1.00 |
-|  U11/ld_x_reg_i_2_n_0                         |                                              | U11/ld_x_reg_i_3_n_0     |                1 |              1 |         1.00 |
-|  U12/clk190                                   |                                              | CLR_IBUF                 |                1 |              2 |         2.00 |
-|  U11/FSM_sequential_next_state_reg[2]_i_2_n_0 |                                              |                          |                2 |              3 |         1.50 |
-|  CLK_IBUF_BUFG                                |                                              |                          |                2 |              4 |         2.00 |
-|  clk_25_BUFG                                  |                                              | U6/clr_multiplier_output |                1 |              5 |         5.00 |
-|  clk_25_BUFG                                  |                                              | CLR_IBUF                 |                4 |             12 |         3.00 |
-|  clk_25_BUFG                                  | U6/producto0                                 |                          |                3 |             16 |         5.33 |
-|  clk_25_BUFG                                  | U6/E[0]                                      | U6/clr_multiplier_output |                2 |             16 |         8.00 |
-|  clk_25_BUFG                                  | U11/FSM_sequential_present_state_reg[1]_0[0] | CLR_IBUF                 |                3 |             16 |         5.33 |
-|  clk_25_BUFG                                  | U9/res                                       | U6/clr_multiplier_output |                4 |             16 |         4.00 |
-|  U1/clk                                       |                                              |                          |                5 |             18 |         3.60 |
-|  clk_25_BUFG                                  | U11/E[0]                                     | CLR_IBUF                 |                4 |             19 |         4.75 |
-|  CLK_IBUF_BUFG                                |                                              | CLR_IBUF                 |                6 |             20 |         3.33 |
-+-----------------------------------------------+----------------------------------------------+--------------------------+------------------+----------------+--------------+
++---------------------------+------------------------------------------+--------------------------+------------------+----------------+--------------+
+|        Clock Signal       |               Enable Signal              |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+------------------------------------------+--------------------------+------------------+----------------+--------------+
+|  U11/x_sel_reg/G0         |                                          |                          |                1 |              1 |         1.00 |
+|  U1/clk25_reg_LDC_i_1_n_0 |                                          | U1/clk25_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  U11/go_mult_reg_i_1_n_0  |                                          | U11/go_mult_reg_i_2_n_0  |                1 |              1 |         1.00 |
+|  U11/clr_mult_reg_i_2_n_0 |                                          | U11/x_sel_reg_i_1_n_0    |                1 |              1 |         1.00 |
+|  U11/ld_x_reg_i_2_n_0     |                                          | U11/Q[0]                 |                1 |              1 |         1.00 |
+|  U11/Q[2]                 |                                          | U11/ld_out_reg_i_1_n_0   |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG            |                                          | U1/clk25_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG            |                                          | U1/clk25_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  U12/clk190               |                                          | CLR_IBUF                 |                2 |              2 |         1.00 |
+|  CLK_IBUF_BUFG            |                                          | CLR_IBUF                 |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG            |                                          | U11/clr_multiplier       |                3 |              5 |         1.67 |
+|  U11/next_state           |                                          |                          |                2 |              6 |         3.00 |
+|  clk_25_BUFG              |                                          | CLR_IBUF                 |                4 |             12 |         3.00 |
+|  CLK_IBUF_BUFG            | U6/E[0]                                  | U11/clr_multiplier       |                3 |             16 |         5.33 |
+|  CLK_IBUF_BUFG            | U9/producto0                             |                          |                3 |             16 |         5.33 |
+|  CLK_IBUF_BUFG            | U9/res                                   | U11/clr_multiplier       |                4 |             16 |         4.00 |
+|  clk_25_BUFG              | U11/FSM_onehot_present_state_reg[3]_0[0] | CLR_IBUF                 |                5 |             16 |         3.20 |
+|  CLK_IBUF_BUFG            |                                          |                          |                6 |             19 |         3.17 |
+|  clk_25_BUFG              | U11/E[0]                                 | CLR_IBUF                 |                4 |             19 |         4.75 |
++---------------------------+------------------------------------------+--------------------------+------------------+----------------+--------------+
 
 

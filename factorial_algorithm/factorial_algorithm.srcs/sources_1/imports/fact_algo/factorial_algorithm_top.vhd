@@ -134,7 +134,7 @@ U11: entity work.control_unit port map(
 
 U12: entity work.X7segb port map(
         x => output_register,
-        cclk => clk_190,
+        cclk => CLK,
         clr => CLR,
         a_to_g => A_TO_G,
         an => AN

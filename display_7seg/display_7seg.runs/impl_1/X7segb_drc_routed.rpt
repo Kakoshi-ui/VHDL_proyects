@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Wed Sep  6 15:06:12 2023
+| Date         : Mon Nov 13 17:08:50 2023
 | Host         : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
 | Command      : report_drc -file X7segb_drc_routed.rpt -pb X7segb_drc_routed.pb -rpx X7segb_drc_routed.rpx
 | Design       : X7segb
