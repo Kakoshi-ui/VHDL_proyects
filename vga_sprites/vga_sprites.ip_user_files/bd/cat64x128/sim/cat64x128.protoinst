@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"cat64x128": {
+			"proto_instances": {
+			}
+		}
+	}
+}

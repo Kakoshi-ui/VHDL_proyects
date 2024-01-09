@@ -1,0 +1,107 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8E9349F68BF2F6E4",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../vga_sprites.gen/sources_1/bd/cat64x128",
+      "name": "cat64x128",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "cat64x128": ""
+    },
+    "ports": {
+      "addr_cat": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      },
+      "clk_cat": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "cat64x128_clk_cat",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dout_cat": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      }
+    },
+    "components": {
+      "cat64x128": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "cat64x128_blk_mem_gen_0_0",
+        "xci_path": "ip\\cat64x128_blk_mem_gen_0_0\\cat64x128_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "cat64x128",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../vga_sprites.documents/cat.COE"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Write_Depth_A": {
+            "value": "8193"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "nets": {
+      "addra_0_1": {
+        "ports": [
+          "addr_cat",
+          "cat64x128/addra"
+        ]
+      },
+      "cat64x128_douta": {
+        "ports": [
+          "cat64x128/douta",
+          "dout_cat"
+        ]
+      },
+      "clka_0_1": {
+        "ports": [
+          "clk_cat",
+          "cat64x128/clka"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x320DBE148BC9A54F",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../vga_sprites.gen/sources_1/bd/ball64x448",
+      "name": "ball64x448",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ball64x448": ""
+    },
+    "ports": {
+      "addr_ball": {
+        "direction": "I",
+        "left": "14",
+        "right": "0"
+      },
+      "clk_ball": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "ball64x448_clk_ball",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dout_ball": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ball64x448": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "ball64x448_blk_mem_gen_0_0",
+        "xci_path": "ip\\ball64x448_blk_mem_gen_0_0\\ball64x448_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "ball64x448",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../vga_sprites.documents/ball.COE"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Write_Depth_A": {
+            "value": "28672"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "nets": {
+      "addra_0_1": {
+        "ports": [
+          "addr_ball",
+          "ball64x448/addra"
+        ]
+      },
+      "ball64x448_douta": {
+        "ports": [
+          "ball64x448/douta",
+          "dout_ball"
+        ]
+      },
+      "clka_0_1": {
+        "ports": [
+          "clk_ball",
+          "ball64x448/clka"
+        ]
+      }
+    }
+  }
+}

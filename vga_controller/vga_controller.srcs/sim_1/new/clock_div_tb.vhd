@@ -7,11 +7,11 @@ end clock_div_tb;
 
 architecture Behavioral of clock_div_tb is
 signal clk, clr: std_logic;
-signal clkx: std_logic;
+signal clk_40: std_logic;
 
 begin
 
-    uut: entity work.clk_div port map(clk, clr, clkx);
+    uut: entity work.clk_div port map(clk, clr, clk_40);
 
     clock: process
     begin

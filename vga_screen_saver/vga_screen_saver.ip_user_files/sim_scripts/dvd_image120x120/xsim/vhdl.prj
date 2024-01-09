@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/dvd_image120x120/sim/dvd_image120x120.vhd" \
+
+# Do not sort compile order
+nosort

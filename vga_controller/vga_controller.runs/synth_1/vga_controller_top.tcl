@@ -80,7 +80,6 @@ set_property webtalk.parent_dir C:/Digital_Sys_Design/vga_controller/vga_control
 set_property parent.project_path C:/Digital_Sys_Design/vga_controller/vga_controller.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo c:/Digital_Sys_Design/vga_controller/vga_controller.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -101,10 +100,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Digital_Sys_Design/Basys-3-Master.xdc
-set_property used_in_implementation false [get_files C:/Digital_Sys_Design/Basys-3-Master.xdc]
+read_xdc C:/Digital_Sys_Design/vga_controller/vga_controller.srcs/constrs_1/imports/Digital_Sys_Design/Basys-3-Master.xdc
+set_property used_in_implementation false [get_files C:/Digital_Sys_Design/vga_controller/vga_controller.srcs/constrs_1/imports/Digital_Sys_Design/Basys-3-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Digital_Sys_Design/vga_controller/vga_controller.srcs/utils_1/imports/synth_1/vga_controller_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L xil_defaultlib -L secureip -L xpm --snapshot dvd_image120x120 xil_defaultlib.dvd_image120x120 -log elaborate.log

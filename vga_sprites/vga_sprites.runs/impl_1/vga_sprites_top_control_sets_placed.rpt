@@ -1,0 +1,89 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Jan  8 17:25:05 2024
+| Host         : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_sprites_top_control_sets_placed.rpt
+| Design       : vga_sprites_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    11 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           19 |
+| No           | No                    | Yes                    |              51 |           16 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              43 |           15 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------+----------------------+------------------+----------------+--------------+
+|   Clock Signal  |   Enable Signal  |   Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+------------------+----------------------+------------------+----------------+--------------+
+|  U1/CLK         |                  |                      |                2 |              2 |         1.00 |
+|  MCLK_IBUF_BUFG |                  |                      |                1 |              2 |         2.00 |
+|  clk_25M_BUFG   | U5/ld_reg        | CLR_IBUF             |                3 |              4 |         1.33 |
+|  U1/CLK         |                  | U5/frames[2]_i_2_n_0 |                4 |              9 |         2.25 |
+|  clk_25M_BUFG   |                  | CLR_IBUF             |                3 |             10 |         3.33 |
+|  clk_25M_BUFG   | U6/vsenable      | CLR_IBUF             |                4 |             10 |         2.50 |
+|  U1/CLK         |                  | CLR_IBUF             |                3 |             12 |         4.00 |
+|  clk_25M_BUFG   | U6/cat_counter0  | CLR_IBUF             |                4 |             14 |         3.50 |
+|  clk_25M_BUFG   | U6/ball_counter0 | CLR_IBUF             |                4 |             15 |         3.75 |
+|  MCLK_IBUF_BUFG |                  | CLR_IBUF             |                6 |             20 |         3.33 |
+|  clk_25M_BUFG   |                  |                      |               16 |             26 |         1.62 |
++-----------------+------------------+----------------------+------------------+----------------+--------------+
+
+

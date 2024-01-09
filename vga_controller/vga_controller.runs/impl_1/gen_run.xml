@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701272242">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1703121884">
   <File Type="ROUTE-PWR" Name="vga_controller_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="vga_controller_top.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="vga_controller_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="vga_controller_top_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="vga_controller_top_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="vga_controller_top.mmi"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="vga_controller_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="vga_controller_top_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="vga_controller_top_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="vga_controller_top_reports.tcl"/>
   <File Type="OPT-TIMING" Name="vga_controller_top_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="vga_controller_top_opt.dcp"/>
   <File Type="OPT-DRC" Name="vga_controller_top_drc_opted.rpt"/>
@@ -24,6 +25,8 @@
   <File Type="PLACE-PRE-SIMILARITY" Name="vga_controller_top_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BIN" Name="vga_controller_top.bin"/>
   <File Type="PLACE-TIMING" Name="vga_controller_top_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="vga_controller_top_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="vga_controller_top_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="vga_controller_top_postplace_pwropt.dcp"/>
   <File Type="BITSTR-MSK" Name="vga_controller_top.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="vga_controller_top_timing_summary_postplace_pwropted.rpt"/>
@@ -40,7 +43,7 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="vga_controller_top_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vga_controller_top_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga_controller_top_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="vga_controller_top_power_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="vga_controller_top_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="vga_controller_top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="vga_controller_top_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="vga_controller_top_timing_summary_routed.rpt"/>
@@ -63,6 +66,8 @@
   <File Type="BITSTR-NKY" Name="vga_controller_top.nky"/>
   <File Type="BITSTR-BMM" Name="vga_controller_top_bd.bmm"/>
   <File Type="PDI-FILE" Name="vga_controller_top.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="vga_controller_top_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="vga_controller_top_pld.pdi"/>
   <File Type="RCFI_FILE" Name="vga_controller_top.rcfi"/>
   <File Type="CFI_FILE" Name="vga_controller_top.cfi"/>
   <File Type="RNPI_FILE" Name="vga_controller_top.rnpi"/>
@@ -116,27 +121,39 @@
       <Option Name="TopModule" Val="vga_controller_top"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../Basys-3-Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/Digital_Sys_Design/Basys-3-Master.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1702666050"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PPRDIR/../Basys-3-Master.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Digital_Sys_Design/Basys-3-Master.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/vga_controller_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

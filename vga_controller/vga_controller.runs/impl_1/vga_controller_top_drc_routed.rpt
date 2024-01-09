@@ -1,7 +1,7 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Wed Nov 29 09:40:07 2023
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Dec 20 19:26:49 2023
 | Host         : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
 | Command      : report_drc -file vga_controller_top_drc_routed.rpt -pb vga_controller_top_drc_routed.pb -rpx vga_controller_top_drc_routed.rpx
 | Design       : vga_controller_top
@@ -24,18 +24,33 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+----------+----------+-------------------+------------+
-| Rule     | Severity | Description       | Violations |
-+----------+----------+-------------------+------------+
-| PDRC-153 | Warning  | Gated clock check | 1          |
-+----------+----------+-------------------+------------+
+             Violations found: 3
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 PDRC-153#1 Warning
 Gated clock check  
-Net U3/r_reg_i_2_n_0 is a gated clock net sourced by a combinational pin U3/r_reg_i_2/O, cell U3/r_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net U1/full_reg_0 is a gated clock net sourced by a combinational pin U1/hcs[10]_i_2/O, cell U1/hcs[10]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net U2/hcs_reg[8]_0 is a gated clock net sourced by a combinational pin U2/r_reg_i_2/O, cell U2/r_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT U1/hcs[10]_i_2 is driving clock pin of 22 cells. This could lead to large hold time violations. Involved cells are:
+U2/hcs_reg[0], U2/hcs_reg[10], U2/hcs_reg[1], U2/hcs_reg[2], U2/hcs_reg[3],
+U2/hcs_reg[4], U2/hcs_reg[5], U2/hcs_reg[6], U2/hcs_reg[7], U2/hcs_reg[8],
+U2/hcs_reg[9], U2/vcs_reg[0], U2/vcs_reg[1], U2/vcs_reg[2], U2/vcs_reg[3]
+ (the first 15 of 22 listed)
 Related violations: <none>
 
 

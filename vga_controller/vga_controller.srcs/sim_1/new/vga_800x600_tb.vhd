@@ -18,10 +18,10 @@ begin
     clock: process
     begin
         clk <= '0';
-        wait for 10 ns;
+        wait for 12.5 ns;
 
         clk <= '1';
-        wait for 10 ns;
+        wait for 12.5 ns;
     end process clock;
 
     stimulus: process

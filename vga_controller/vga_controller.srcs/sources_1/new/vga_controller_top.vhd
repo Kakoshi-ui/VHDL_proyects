@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity vga_controller_top is
     port(   CLK: in std_logic;
             CLR: in std_logic;
-            SW: in std_logic_vector (7 downto 0);
+            SW: in std_logic_vector (15 downto 0);
             HSYNC: out std_logic;
             VSYNC: out std_logic;
             RED: out std_logic_vector(3 downto 0);
@@ -15,7 +15,7 @@ entity vga_controller_top is
 end vga_controller_top;
 
 architecture Behavioral of vga_controller_top is
-signal clk_50M: std_logic;
+signal clk_40M: std_logic;
 signal hor_counter: std_logic_vector (10 downto 0);
 signal ver_counter: std_logic_vector (9 downto 0);
 signal video_on: std_logic;
@@ -27,11 +27,11 @@ begin
     U1: entity work.clk_div port map(
         clk => CLK,
         clr => CLR,
-        clkx => clk_50M
+        clk_40 => clk_40M
     );
 
     U2: entity work.vga_800x600 port map(
-        clk => clk_50M,
+        clk => clk_40M,
         clr => CLR,
         hsync => HSYNC,
         vsync => VSYNC,

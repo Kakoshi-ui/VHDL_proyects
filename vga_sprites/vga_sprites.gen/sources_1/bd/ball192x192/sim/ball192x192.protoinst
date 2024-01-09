@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ball192x192": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ball64x448": {
+			"proto_instances": {
+			}
+		}
+	}
+}
