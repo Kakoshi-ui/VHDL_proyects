@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Jan  8 17:21:42 2024
-# Process ID: 29740
+# Start of session at: Sat Jan 13 16:04:36 2024
+# Process ID: 29828
 # Current directory: C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1
 # Command line: vivado.exe -log vga_sprites_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_sprites_top.tcl
 # Log file: C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/vga_sprites_top.vds

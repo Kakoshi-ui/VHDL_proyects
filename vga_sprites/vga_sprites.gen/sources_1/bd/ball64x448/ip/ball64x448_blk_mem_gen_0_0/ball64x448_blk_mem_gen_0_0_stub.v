@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sun Jan  7 22:55:13 2024
+// Date        : Sat Jan 13 16:04:31 2024
 // Host        : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top ball64x448_blk_mem_gen_0_0 -prefix
-//               ball64x448_blk_mem_gen_0_0_ ball64x448_blk_mem_gen_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/ball64x448/ip/ball64x448_blk_mem_gen_0_0/ball64x448_blk_mem_gen_0_0_stub.v
 // Design      : ball64x448_blk_mem_gen_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

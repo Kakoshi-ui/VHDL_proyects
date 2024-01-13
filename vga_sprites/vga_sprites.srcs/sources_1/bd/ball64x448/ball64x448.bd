@@ -60,7 +60,7 @@
         "inst_hier_path": "ball64x448",
         "parameters": {
           "Coe_File": {
-            "value": "../../../../../../vga_sprites.documents/ball.COE"
+            "value": "c:/Digital_Sys_Design/vga_sprites/vga_sprites.documents/ball.coe"
           },
           "Enable_A": {
             "value": "Always_Enabled"

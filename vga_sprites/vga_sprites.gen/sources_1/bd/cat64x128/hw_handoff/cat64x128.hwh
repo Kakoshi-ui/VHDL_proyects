@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan  8 11:24:57 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jan 13 16:02:05 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.2" DEVICE="7a35t" NAME="cat64x128" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -112,7 +112,7 @@
         <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
         <PARAMETER NAME="Byte_Size" VALUE="9"/>
         <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
-        <PARAMETER NAME="Coe_File" VALUE="../../../../../../vga_sprites.documents/cat.COE"/>
+        <PARAMETER NAME="Coe_File" VALUE="c:/Digital_Sys_Design/vga_sprites/vga_sprites.documents/cat.coe"/>
         <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
         <PARAMETER NAME="Component_Name" VALUE="cat64x128_blk_mem_gen_0_0"/>
         <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>

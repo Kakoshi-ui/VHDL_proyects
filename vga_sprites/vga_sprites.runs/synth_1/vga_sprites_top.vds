@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Jan  8 17:21:42 2024
-# Process ID: 29740
+# Start of session at: Sat Jan 13 16:04:36 2024
+# Process ID: 29828
 # Current directory: C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1
 # Command line: vivado.exe -log vga_sprites_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_sprites_top.tcl
 # Log file: C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/vga_sprites_top.vds
@@ -12,7 +12,7 @@
 # Running On: LAPTOP-RQPNV6GP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 33737 MB
 #-----------------------------------------------------------
 source vga_sprites_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 520.344 ; gain = 217.727
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 518.973 ; gain = 214.523
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
@@ -28,9 +28,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 30800
+INFO: [Synth 8-7075] Helper process launched with PID 29416
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1365.324 ; gain = 440.852
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1365.109 ; gain = 440.988
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vga_sprites_top' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/new/vga_sprites_top.vhd:37]
 INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/new/clk_div.vhd:32]
@@ -40,15 +40,15 @@ INFO: [Synth 8-256] done synthesizing module 'clk_pulse' (0#1) [C:/Digital_Sys_D
 INFO: [Synth 8-638] synthesizing module 'cat64x128_wrapper' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/imports/hdl/cat64x128_wrapper.vhd:23]
 INFO: [Synth 8-3491] module 'cat64x128' declared at 'c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/cat64x128/synth/cat64x128.vhd:15' bound to instance 'cat64x128_i' of component 'cat64x128' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/imports/hdl/cat64x128_wrapper.vhd:32]
 INFO: [Synth 8-638] synthesizing module 'cat64x128' [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/cat64x128/synth/cat64x128.vhd:27]
-INFO: [Synth 8-3491] module 'cat64x128_blk_mem_gen_0_0' declared at 'C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29740-LAPTOP-RQPNV6GP/realtime/cat64x128_blk_mem_gen_0_0_stub.vhdl:6' bound to instance 'cat64x128' of component 'cat64x128_blk_mem_gen_0_0' [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/cat64x128/synth/cat64x128.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'cat64x128_blk_mem_gen_0_0' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29740-LAPTOP-RQPNV6GP/realtime/cat64x128_blk_mem_gen_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'cat64x128_blk_mem_gen_0_0' declared at 'C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29828-LAPTOP-RQPNV6GP/realtime/cat64x128_blk_mem_gen_0_0_stub.vhdl:6' bound to instance 'cat64x128' of component 'cat64x128_blk_mem_gen_0_0' [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/cat64x128/synth/cat64x128.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'cat64x128_blk_mem_gen_0_0' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29828-LAPTOP-RQPNV6GP/realtime/cat64x128_blk_mem_gen_0_0_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'cat64x128' (0#1) [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/cat64x128/synth/cat64x128.vhd:27]
 INFO: [Synth 8-256] done synthesizing module 'cat64x128_wrapper' (0#1) [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/imports/hdl/cat64x128_wrapper.vhd:23]
 INFO: [Synth 8-638] synthesizing module 'ball64x448_wrapper' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/imports/hdl/ball64x448_wrapper.vhd:23]
 INFO: [Synth 8-3491] module 'ball64x448' declared at 'c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/ball64x448/synth/ball64x448.vhd:15' bound to instance 'ball64x448_i' of component 'ball64x448' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/imports/hdl/ball64x448_wrapper.vhd:32]
 INFO: [Synth 8-638] synthesizing module 'ball64x448' [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/ball64x448/synth/ball64x448.vhd:27]
-INFO: [Synth 8-3491] module 'ball64x448_blk_mem_gen_0_0' declared at 'C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29740-LAPTOP-RQPNV6GP/realtime/ball64x448_blk_mem_gen_0_0_stub.vhdl:6' bound to instance 'ball64x448' of component 'ball64x448_blk_mem_gen_0_0' [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/ball64x448/synth/ball64x448.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'ball64x448_blk_mem_gen_0_0' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29740-LAPTOP-RQPNV6GP/realtime/ball64x448_blk_mem_gen_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'ball64x448_blk_mem_gen_0_0' declared at 'C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29828-LAPTOP-RQPNV6GP/realtime/ball64x448_blk_mem_gen_0_0_stub.vhdl:6' bound to instance 'ball64x448' of component 'ball64x448_blk_mem_gen_0_0' [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/ball64x448/synth/ball64x448.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'ball64x448_blk_mem_gen_0_0' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/.Xil/Vivado-29828-LAPTOP-RQPNV6GP/realtime/ball64x448_blk_mem_gen_0_0_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'ball64x448' (0#1) [c:/Digital_Sys_Design/vga_sprites/vga_sprites.gen/sources_1/bd/ball64x448/synth/ball64x448.vhd:27]
 INFO: [Synth 8-256] done synthesizing module 'ball64x448_wrapper' (0#1) [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/imports/hdl/ball64x448_wrapper.vhd:23]
 INFO: [Synth 8-638] synthesizing module 'sprite_m' [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/new/sprite_m.vhd:35]
@@ -63,18 +63,18 @@ WARNING: [Synth 8-614] signal 'dout_ball' is read in the process but is not in t
 INFO: [Synth 8-256] done synthesizing module 'vga_pixels' (0#1) [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/new/vga_pixels.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'vga_sprites_top' (0#1) [C:/Digital_Sys_Design/vga_sprites/vga_sprites.srcs/sources_1/new/vga_sprites_top.vhd:37]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.250 ; gain = 553.777
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1478.121 ; gain = 554.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.250 ; gain = 553.777
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1478.121 ; gain = 554.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.250 ; gain = 553.777
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1478.121 ; gain = 554.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1478.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1478.121 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -91,22 +91,22 @@ Parsing XDC File [C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/don
 Finished Parsing XDC File [C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1578.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1578.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1577.824 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -116,7 +116,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for U4/ball64x448_i/ball64x448. (cons
 Applied set_property KEEP_HIERARCHY = SOFT for U3/cat64x128_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U3/cat64x128_i/cat64x128. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'sprite_m'
 ---------------------------------------------------------------------------------------------------
@@ -133,7 +133,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in modul
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'one-hot' in module 'sprite_m'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -182,25 +182,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -218,37 +218,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -283,18 +283,18 @@ Report Cell Usage:
 |15    |OBUF                            |    14|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:53 . Memory (MB): peak = 1578.215 ; gain = 553.777
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1578.215 ; gain = 653.742
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1577.824 ; gain = 554.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1577.824 ; gain = 653.703
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1578.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1577.824 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1578.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -302,8 +302,8 @@ Synth Design complete | Checksum: 20ee2506
 INFO: [Common 17-83] Releasing license: Synthesis
 53 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:21 . Memory (MB): peak = 1578.215 ; gain = 1042.789
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1578.215 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1577.824 ; gain = 1044.621
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1577.824 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Digital_Sys_Design/vga_sprites/vga_sprites.runs/synth_1/vga_sprites_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vga_sprites_top_utilization_synth.rpt -pb vga_sprites_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 17:23:44 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 16:05:29 2024...

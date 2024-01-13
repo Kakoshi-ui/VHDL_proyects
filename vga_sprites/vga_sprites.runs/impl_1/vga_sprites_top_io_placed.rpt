@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date                      : Mon Jan  8 17:25:05 2024
+| Date                      : Sat Jan 13 16:06:28 2024
 | Host                      : LAPTOP-RQPNV6GP running 64-bit major release  (build 9200)
 | Command                   : report_io -file vga_sprites_top_io_placed.rpt
 | Design                    : vga_sprites_top

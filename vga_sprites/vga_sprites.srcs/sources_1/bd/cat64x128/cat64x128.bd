@@ -60,7 +60,7 @@
         "inst_hier_path": "cat64x128",
         "parameters": {
           "Coe_File": {
-            "value": "../../../../../../vga_sprites.documents/cat.COE"
+            "value": "c:/Digital_Sys_Design/vga_sprites/vga_sprites.documents/cat.coe"
           },
           "Enable_A": {
             "value": "Always_Enabled"
